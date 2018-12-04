@@ -124,28 +124,30 @@ input{
 
 /* ========pop over ===============*/
 
-.popover__wrapper{
+.popover__wrapper {
   position: relative;
+  margin-top: 1.5rem;
   display: inline-block;
 }
 .popover__content {
-  padding: 2px;
+  opacity: 0;
   visibility: hidden;
   position: absolute;
-  margin-top: 2.2rem;
-  background-color: white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  height: 150px;
+  left: -110px;
+  transform: translate(0,10px);
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(245, 243, 243, 0.26);
   width: 250px;
-  border: 10px solid transparent transparent #BFBFBF transparent;;
-  z-index:1000; 
 }
-
-#contact:hover .popover__content {
+.popover__wrapper:hover .popover__content {
+  z-index: 10;
   opacity: 1;
   visibility: visible;
-}
-#contact:hover #contact {
-background-color: rgb(14, 12, 12);
+  transform: translate(0,-20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
 
+.empty-list {
+  padding: 1.0rem;
+}

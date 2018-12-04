@@ -4,6 +4,7 @@ const db = require('./index.js');
 mongoose.Promise = global.Promise;
 
 var userSchema = mongoose.Schema({
+  id: Number,
   name: String,
   username: String,
   password: String,

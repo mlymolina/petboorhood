@@ -19,8 +19,9 @@ class App extends React.Component {
       url: '/dogs', 
       success: (data) => {
         this.setState({
-          pets: data
-        })
+          pets: data.pets,
+          currentUser: data.user
+        });
       },
       error: (err) => {
         console.log('err', err);
@@ -32,6 +33,25 @@ class App extends React.Component {
     this.setState({
     	currentView: event.target.value,
     });
+  }
+
+  updatePets() {
+    $.ajax({
+      url: '/dogs', 
+      success: (data) => {
+        this.setState({
+          pets: data.pets,
+          currentUser: data.user
+        });
+      },
+      error: (err) => {
+        console.log('err', err);
+      }
+    });
+  }
+
+  addToMyList() {
+
   }
 
   render () {
@@ -80,7 +100,17 @@ class App extends React.Component {
           }
 
           { this.state.currentView === 'requestSitter' &&
-            <RequestSitter initialProps={this.state}/>
+            <RequestSitter update={this.updatePets.bind(this)} initialProps={this.state}/>
+          }
+
+          { this.state.currentView === 'myPetList' &&
+            this.state.currentUser.hasTakenCareOf.length > 0 ?
+            <Pets view={this.state.currentView} pets={this.state.currentUser.hasTakenCareOf}/>:
+            this.state.currentView === 'myPetList' && 
+            <div className="empty-list">
+              <h4>Empty list!</h4>
+              <h6>Start taking care of someone else pet and become happier.</h6>
+            </div>
           }
           
         </div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import $ from 'jquery';
 
 class RequestSitter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       value: '2018-12-31',
-      pet: this.props.initialProps.pets[2]
+      pet: this.props.initialProps.pets[5]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -17,8 +18,11 @@ class RequestSitter extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Pet Sitter Request Submitted' + this.state.value);
     event.preventDefault();
+    $.ajax({
+      type: 'PUT',
+      url: '/dog/update/status/Molly'
+    });
   }
 
   render() {
@@ -70,7 +74,7 @@ class RequestSitter extends React.Component {
               min="2018-01-01" 
               max="2030-12-31"
             />
-            <input className="submit-request"type="submit" value="Submit" />
+            <input onClick={this.props.update()}className="submit-request"type="submit" value="Submit" />
           </div>
       </form>
     );
