@@ -1,0 +1,151 @@
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  position: center;
+  color: white;
+  border-radius: 4px;
+  height: 50px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}          
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+
+.nav-item {
+  color: lightslategray
+}
+.options {
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 250px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.pic {
+  display: inline-block; 
+  float: left;
+}
+.info-sec {
+  display: inline-block;
+}
+.desc {
+  font-weight: bolder;
+}
+
+.pet-container {
+  margin-top: 1%;
+  width: 750px;
+}
+
+.pet-list{
+  margin-top: 1%;
+}
+
+.fas {
+  margin-right: 2px;
+  color:rgb(66, 184, 221);
+  size: 10px;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+img { min-height:160px;}
+
+.takecare {
+  margin-top: 1px;
+  background: rgb(28, 184, 65);
+  color: white;
+}
+
+*:focus {
+  outline: 0 !important;
+  background-color: #3BCBFF;
+}
+
+.pet-sitter-request {
+  margin-top: 3%;
+  width: 550px;
+}
+
+input{
+  display: block;
+  margin-bottom: 1%;
+}
+.submit-request {
+  margin-top: 2%
+}
+
+/* .pic-rounded {
+  display: inline; 
+  flex-direction: column;
+}
+
+.formImg {
+  height: auto;
+  transform: scale(.8);
+  border-radius: 80%
+} */
+
+.form {
+  float: right;
+}
+
+
+/* ========pop over ===============*/
+
+.popover__wrapper{
+  position: relative;
+  display: inline-block;
+}
+.popover__content {
+  padding: 2px;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 2.2rem;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  height: 150px;
+  width: 250px;
+  border: 10px solid transparent transparent #BFBFBF transparent;;
+  z-index:1000; 
+}
+
+#contact:hover .popover__content {
+  opacity: 1;
+  visibility: visible;
+}
+#contact:hover #contact {
+background-color: rgb(14, 12, 12);
+}
+

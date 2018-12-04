@@ -1,4 +1,4 @@
-# Project Name #
+# Petborhood #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Petborhood is a platfrom to get someone to take care of your pet or take care of someone else pet for "free".
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > Petborhood is intended for people whose have pets and would love to take care of someone else pet in their spare time.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > With petborhood you can see which neighbor is in need of a pet sitter and you can choose to do the service and also as a user you can request a pet sitter. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > When you have to go out of town and need to find someone to talk care of you pet, the existing apps have a pretty high cost for talking care of your pet. 
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Petborhood intend to create a community where you can find people willing to take care of pets in exchange of credit poitns represents the right of getting someone to take care of your pet when you need it. These points are earned by taking care of someone else dog.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > As a pet lover, you want to find a person who is also a petlover to take care of your pet. Petborhood bring together all the petowners/petlovers.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > After you register in the app and you will have your first credit available which is worth an overnight pet sitting. After you are registered you will have two options, request a pet sitter or view the pet's in need of being sitted. When you choose the option of finding a sitter you will be asked the date and your pet info and this is gonna be posted on the pet's in need of being sitted. If you choose to look at the list of the pet's that need a pet sitter, you will have the option of pick one or more of them.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > Never was so easy to find a pet sitter without breaking the budget and at the same time someone that really think of pets as a family member
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Petborhood build the community that you and your pet were looking for. Become a petborhood memeber now.
